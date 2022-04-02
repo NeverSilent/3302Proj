@@ -15,7 +15,7 @@ EMFCoefCim = 18.803/1000;
 mechDampingConstantClimbing = (TorqueCoefCim * EMFCoefCim) / TerminalResistanceCim; %%see document ref
 %LVDT input voltage is 3VRMS resulting sensitivity is 0.0084V/mm and null
 %offset of 0.0105V
-LVDTGain = 0.0084; %E/(2*pi*N) E: reference voltage, N: # of avalible turns
+LVDTGain = 0.0084*1000; %get to mV/m
 LVDTOffset = 0.0105;
 load_system('ClimbSim.slx');
 sim('ClimbSim.slx');

@@ -13,7 +13,7 @@ TorqueCoefCim = 18.803/1000;
 TorqueDisturbanceLaunch = 0;
 EMFCoefCim = 18.803/1000;
 mechDampingConstantLaunch = (TorqueCoefCim * EMFCoefCim) / TerminalResistanceCim; %%see document ref
-ResistorTF = 5/(2*pi*1); %E/(2*pi*N) E: reference voltage, N: # of avalible turns
+ResistorTF = 12/(2*pi*1); %E/(2*pi*N) E: reference voltage, N: # of avalible turns
 load_system('LaunchSim.slx');
 sim('LaunchSim.slx');
 %Simulink.sdi.view;
