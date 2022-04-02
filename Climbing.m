@@ -4,9 +4,10 @@
 InputClimbing = 1;
 %for total inertia, there are some gear ratios that reduce the torque seen
 %at the motors and there is also inertia from the rotor of the motor. For
-%this transfer function the load inertia will be divided by 2 and the gear ratio
-%and then the rotor inertia will be added on.
-loadInertiaClimbing = 6.12 / (2*12.75) + (1.27*0.6*(0.0254^2))/2; %%see document ref
+%this transfer function the load inertia will be changing with the
+%position, the equation was found by trial and error of data points,
+%divided by 2 and the gear ratio and then the rotor inertia will be added on.
+loadInertiaClimbing = subs((0.00000523*(InputClimbing)^2+ -0.00355*(InputClimbing) + 1.24) / (2*12.75) + (1.27*0.6*(0.0254^2))/2); %%see document ref
 TerminalResistanceCim = 3;
 TerminalInductanceCim = 122/1000000;
 TorqueCoefCim = 18.803/1000;
