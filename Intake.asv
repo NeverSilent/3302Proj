@@ -1,3 +1,4 @@
-wheel_spacing = 7; %cm
+ArmatureInductance = 1;
+ArmatureResistance = 1;
 
-load("Intake.m")
+%Damping constant c is torqueConst*emfConstant/ArmatureResistance
