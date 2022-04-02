@@ -1,4 +1,0 @@
-ArmatureInductance = 1;
-ArmatureResistance = 1;
-
-%Damping constant c is torqueConst*emfConstant/ArmatureResistance
