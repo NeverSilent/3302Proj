@@ -9,5 +9,5 @@ DampingConstant = (0.01^2)/1.8;
 %Damping constant c is torqueConst*emfConstant/ArmatureResistance
 
 kT = 0.01;
-kEMF = 0.01;
+kEMF = 0.072e-3;
 %Assume kT = kEMF
